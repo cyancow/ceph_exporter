@@ -34,7 +34,12 @@ rgw.mode | Enable collection of stats from RGW (0:disabled 1:enabled 2:backgroun
 Typical way of installing in Go should work.
 
 ```
-go install
+mkdir ~/go/src/github.com/cyancow
+cd ~/go/src/github.com/cyancow
+git clone https://github.com/cyancow/ceph_exporter
+go mod init 
+go mod vendor 或者 go get
+go build
 ```
 
 A Makefile is provided in case you find a need for it.
