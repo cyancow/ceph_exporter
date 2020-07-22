@@ -34,6 +34,11 @@ rgw.mode | Enable collection of stats from RGW (0:disabled 1:enabled 2:backgroun
 Typical way of installing in Go should work.
 
 ```
+# ubuntu
+apt install -y librados-dev
+# centos
+yum install -y librados-dev
+# create directory
 mkdir ~/go/src/github.com/cyancow
 cd ~/go/src/github.com/cyancow
 git clone https://github.com/cyancow/ceph_exporter
